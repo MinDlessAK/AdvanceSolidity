@@ -3,6 +3,6 @@ pragma solidity ^0.8.17;
 
 import "./EnumDeclaration.sol";
 
-contract Enum {
+contract Enum{
     Status public status;
 }
