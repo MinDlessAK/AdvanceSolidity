@@ -21,7 +21,7 @@ contract token{
 
 contract Abiencode{
      function Testcall(address to,uint amount) external returns(bytes memory)  {
-         (bool ok,bytes memory data)=to.call(abi.encodeWithSelector(Token.transfer.selector,msg.sender,amount));
+         (bool ok,bytes memory data)=to.call(abi.encodeWithSelector(Token.transfer.selector,to,amount));
            require(ok,"call failed");
            return data;
      }
